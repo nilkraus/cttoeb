@@ -167,6 +167,28 @@ h1, h2, h3 {
   background-color: #f5f5f5; /* Cor de fundo clara para fallback */
 }
 
+/* Garantir que o título da seção tenha a cor correta e contraste */
+.titulo-secao {
+  font-size: 2.2rem;
+  color: #FFC107 !important; /* Forçar a cor amarela, caso outra regra esteja sobrescrevendo */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Adiciona sombra para melhorar legibilidade */
+  font-weight: bold; /* Deixa o texto mais destacado */
+}
+
+/* Ajustar a seção para garantir que o texto dentro dela tenha contraste */
+.servicos-pagina {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #111, #1c1c1c);
+  color: white; /* Mantém a cor branca para outros textos */
+}
+
+/* Garantir que o container não interfira na cor do título */
+.titulo-secao-container {
+  text-align: center;
+  margin-bottom: 40px;
+  animation: fadeInDown 1s ease forwards;
+  color: inherit; /* Evita que o container force uma cor diferente */
+}
 /* Seções */
 .titulo-secao-container {
   display: flex;
